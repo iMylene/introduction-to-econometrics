@@ -1,14 +1,16 @@
-
 # Example Session R Example-Intro-Econometrics1.R 
 #   What you really should try: open this example Script file in R
-#   Menu/File/Open File…/
+#   Menu/File/Open File?/
 #   Note that in R you can very easily run the commands one at a time
 #   Make sure you see extensions of file names on your computer
 #   In Windows 10: in Explorer  Menu/View and check File Name Extensions
 
+# Set current working directory
+setwd("/Users/Mylene/Documents/introduction-to-econometrics/ComputerTutorial-Week1/")
 
 # Importing external data and doing a regression
 # Import the data file (we used menu in R Studio to generate next 3 lines)
+install.packages("haven")
 library(haven)
 LifeExp <- read_dta("LifeExp.dta")
 View(LifeExp)		# on one of our computers this failed
@@ -59,7 +61,3 @@ rest.lm = lm(stack.loss ~ Air.Flow + Water.Temp)
 
 anova(unrest.lm, rest.lm)   # compare both (nested) models
 # At the moment you may have no idea yet what we are doing
-
-
-
-

@@ -1,3 +1,5 @@
+# Set current working directory
+setwd("/Users/Mylene/Documents/introduction-to-econometrics/ComputerTutorial-Week1/")
 
 # Example Session R:  Example-Intro-Econometrics2.R 
 # Run two independent samples t-test
@@ -31,7 +33,7 @@ wilcox.test(Price~StateStr)	# what is the meaning of the error message?
 
 # we have forgotten to check some numerical measures ( internet R tutorial)
 skewness(Price)	# if R does not know skewness: remember e1071
-library(e1071)	# from before, possibly first:  install.packages(“e1071”)
+library(e1071)	# from before, possibly first:  install.packages(?e1071?)
 skewness(Price)	# that helps, but Price should be split by State 
 help(skewness)	# ?? does not solve our problem
 			# we need logical vectors

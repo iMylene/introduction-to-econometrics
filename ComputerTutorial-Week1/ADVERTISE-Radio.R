@@ -1,3 +1,9 @@
+# Set current working directory
+setwd("/Users/Mylene/Documents/introduction-to-econometrics/ComputerTutorial-Week1/")
+
+# Import data: ADVERTISE-Radio.xls
+ADVERTISE_Radio <- read_excel("~/Documents/introduction-to-econometrics/ComputerTutorial-Week1/ADVERTISE-Radio.xls")
+
 View(ADVERTISE_Radio)		# show what is in Data Frame ADVERTISE_Radio
 Sales=ADVERTISE_Radio$Sales	# create variable Sales
 Radio=ADVERTISE_Radio$Radio	#
